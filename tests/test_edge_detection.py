@@ -4,7 +4,7 @@ Test file for edge detection
 
 import os
 
-from ..src.edge_detection import edge_detection
+from src.edge_detection import edge_detection
 
 def test_edge_detection():
     input_image = "tests/input_test.jpg"
@@ -12,4 +12,5 @@ def test_edge_detection():
 
     edge_detection(input_image, output_image)
     
+
     assert os.path.exists(output_image), "Output image was not created"
