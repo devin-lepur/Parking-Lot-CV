@@ -24,7 +24,7 @@ def test_pre_process_image():
     cv2.imwrite(output_image, processed_image)
 
 
-    assert os.path_exists(output_image), "Pre-process image was not created"
+    assert os.path.exists(output_image), "Pre-process image was not created"
 
 def test_edge_detection():
     input_image = "tests/input_test.jpg"
@@ -41,5 +41,5 @@ def test_edge_detection():
     cv2.imwrite(output_image, edges_image)
 
 
-    assert os.path_exists(output_image), "Edge detection image was not created"
+    assert os.path.exists(output_image), "Edge detection image was not created"
 
