@@ -3,7 +3,6 @@ Test file to test github CI
 '''
 
 import cv2
-import os
 
 def edge_detection(input_path, output_path):
     # Load the image
